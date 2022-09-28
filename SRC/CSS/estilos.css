@@ -19,8 +19,23 @@ body {
 }
 
 .cabecalho .pokebola {
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
+}
+
+.movimento img {
+    filter: drop-shadow(0px 0px 1px #4b4b50);
+    animation: flutuar 3s linear infinite;
+}
+
+@keyframes flutuar {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .pokemon-slider {
@@ -86,6 +101,26 @@ body {
 
 .cartao.fundo-3 {
     background: url(../IMAGENS/fundo-card-3.jpg) no-repeat;
+}
+
+.cartao.fundo-4 {
+    background: url(../IMAGENS/fundo-card-4.jpg) no-repeat;
+}
+
+.cartao.fundo-5 {
+    background: url(../IMAGENS/fundo-card-5.jpg) no-repeat;
+}
+
+.cartao.fundo-6 {
+    background: url(../IMAGENS/fundo-card-6.jpg) no-repeat;
+}
+
+.cartao.fundo-7 {
+    background: url(../IMAGENS/fundo-card-7.jpg) no-repeat;
+}
+
+.cartao.fundo-8 {
+    background: url(../IMAGENS/fundo-card-8.jpg) no-repeat;
 }
 
 .cartao .informacoes {
