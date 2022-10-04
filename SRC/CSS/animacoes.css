@@ -1,0 +1,41 @@
+.movimento img {
+    filter: drop-shadow(0px 0px 1px #4b4b50);
+    animation: flutuar 3s linear infinite;
+}
+
+@keyframes flutuar {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.ondulada {
+    position: relative;
+}
+
+.ondulada span {
+    position: relative;
+    display: inline-block;
+    font-family: 'pokemonsolid';
+    color: #f7c505;
+    -webkit-text-stroke: 4px #3263aa;
+    font-size: 4.2em;
+    line-height: 20px;
+    animation: ondulada-anim 1s infinite;
+    animation-delay: calc(0.1s* var(--i));
+}
+
+@keyframes ondulada-anim {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+}
